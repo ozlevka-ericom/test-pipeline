@@ -1,0 +1,13 @@
+stages:
+- name: test
+  steps:
+  - runScriptConfig:
+      image: python:3.6-alpine3.9
+      shellScript: echo "Hello first pipeline"
+- name: test2
+  steps:
+  - runScriptConfig:
+      image: python:3.6.8-slim-stretch
+      shellScript: python -c "print('Hello first pipeline')"
+timeout: 60
+notification: {}
