@@ -1,2 +1,10 @@
 ssh_authorized_keys:
     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCz0urinOyHj6iZPHZEqEWNiSjdL1hP5nv6P3behjcTmh9oT9fH98QQx3y3yf1Z0ZLoyv50AIzW1gJf4zPJhiJRMdKGjNPQ4+iVYgiVL8ARBlmtkcubY/+ux3hCm5HV0xX80XtavoN/qZG+A4CMiy9IJukHXTLwcU5O2ZF0ybsus8Ssbwi7eUplMor24gnxiT0Gsnx/WlgZcwWhZeDMZQ2pejAp4Ydpg5D7ZbVOVV7G2/e41Tx/OSmuq4B5FHoXTqxICwxHNccizr919epb2xWjzpyUkr0vte59L7s96Yq3Za0BxSOIXxa7FwdnfIPerfouIw6frx3L6yEIFH+aT3+Z rancher
+rancher:
+    network
+        interfaces: 
+            eth0:
+                address: 192.168.50.21/24
+                gateway: 192.168.50.253
+                dhcp: false
+                mtu: 1500
